@@ -1,0 +1,47 @@
+<ion-view class="wrapper">
+    <ion-side-menus>
+        <ion-side-menu-content style="background-color: whitesmoke">
+            <div class="bar bar-header">
+                <a ng-controller="scrollController" ng-click="scrollTop()">
+                    <div class="bar bar-header bar-assertive"style=" position: absolute" >
+                        <button ng-controller="presentAbsentController" class="button button-icon icon ion-arrow-left-a" ng-click="onClickListAbsentBackButton()"></button>
+                        <h1 class="title">Absent Students</h1>
+                        <button class="button button-icon icon ion-navicon-round" ng-controller="sideMenuController" ng-click="opensidemenu()"></button>
+                    </div>   
+                </a>
+                <button class="button button-icon icon ion-navicon-round" ng-click="opensidemenu()"></button>
+            </div>
+    <ion-content class="padding" style="margin-top: 40px">
+        <div  style="background-color: whitesmoke;margin-left: 14px" ng-controller="submitController">
+            <ul class="list">        
+                <li ng-repeat="x in submitService.absent">
+                    <h1 style="margin-top: 50px;font-size: 25px" ><b>{{x.Name}}</b></h1><hr>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+     </ion-side-menu-content>
+        <ion-side-menu side="right">
+            <ion-header-bar class="bar-dark">
+                <h1 class="title">Profile</h1>
+            </ion-header-bar>
+            <ion-content style="background-color: #cccccc">
+                <ul class="list" style="margin-top: -40px">
+                    <li>
+                        <a ng-controller="logoutController" style="background-color: #cccccc" href="#login" class="item" ng-click="onClickLogout();">
+                            <i class="icon ion-heart"></i>
+                            &nbsp;&nbsp;logout
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" style="background-color: #cccccc">
+                            <i class="icon ion-person-stalker"></i>
+                            &nbsp;&nbsp;change password
+                        </a>
+                    </li>
+                </ul>
+            </ion-content>
+            <ion-nav-view></ion-nav-view>
+        </ion-side-menu>
+    </ion-side-menus>
+</ion-view>

@@ -1,0 +1,50 @@
+<ion-view class="wrapper" ng-controller="attendanceController">
+    <div class="bar bar-header">
+        <div class="bar bar-header bar-assertive"style=" position: absolute">
+            <h1 class="title">Attendance Manager</h1>
+        </div>   
+    </div>
+    <div class="list" style="margin-top:90px">
+
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Select Course
+            </div>
+            <select ng-model="attendanceService.grad" required="required">
+                <option>B.tech</option>
+                <option ng-selected="selected">M.tech</option>
+            </select> 
+        </label>  
+       
+
+        <label class="item item-input item-select" style="margin-top:40px" >
+            <div class="input-label">
+                Select Semester
+            </div>
+            <select ng-model="attendanceService.sem" required="required">
+
+                <option selected>Sem 1</option>
+                <option>Sem 2</option>
+                <option>Sem 3</option>
+                <option>Sem 4</option>
+                <option>Sem 5</option>
+                <option>Sem 6</option>
+                <option>Sem 7</option>
+                <option>Sem 8</option>
+
+            </select> 
+        </label>
+        <label class="item item-input item-select" style="margin-top:40px">
+            <div class="input-label">
+                Select Criteria:Less than
+            </div>
+            <select name="criteria" ng-model="attendanceService.criteria"required="required">
+                <option>50</option>
+                <option selected>60</option>
+            </select> 
+        </label>  
+        <center><button class="button button-positive" style="margin-top:40px"  ng-click="onClickAttend();">
+            Submit
+            </button></center>
+    </div>
+</ion-view>

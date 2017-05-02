@@ -1,0 +1,35 @@
+<ion-view class="wrapper" ng-controller="loginController"> 
+    <div class="bar bar-header bar-assertive ">
+        <h1 class="title">Quorum</h1>
+    </div>
+    <ion-content class="padding" style="margin-top:30px;">
+        <div class="list contentpadding">
+            <div class="col pull-center">
+                <img src="img/icon.png" style="width: 175px; height: 175px;" />
+            </div>
+            <div class="list" style="background-color: whitesmoke;">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label" >First Name</span>
+                    <input type="text" placeholder="First Name" ng-model="loginService.typedUserName">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="password" ng-model="loginService.typedPassword">
+                </label>
+            </div>
+        </div>
+        <div>
+            <center><b style="color: #cc2311">New to application ?</b><br/><br/></center>
+        </div>
+        <center><a href="#signup" style="color: #cc2311">
+<!--                <button class="button pull-center button-assertive" >
+-->                    Sign Up<!--
+                </button>-->
+            </a></center>
+
+    </ion-content>
+    <ion-footer-bar align-title="center" class=" bar-assertive " ng-click="onClickLogin();">
+        <center><div class="title">Login</div></center>
+    </ion-footer-bar>
+
+</ion-view>

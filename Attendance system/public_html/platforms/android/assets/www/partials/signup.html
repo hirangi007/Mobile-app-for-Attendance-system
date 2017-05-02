@@ -1,0 +1,28 @@
+<ion-view class="wrapper" ng-controller="signupController">
+        <div class="bar bar-header bar-assertive" ng-controller="backButtonController">
+            <button ng-controller="logoutController" class="button button-icon icon ion-arrow-left-a" ng-click="onClickSignupBackButton();onClickLogout();"></button>
+            <h1 class="title">Register Here</h1>
+        </div>
+        <ion-content class="padding" style="margin-top:40px;">
+            <div class="list contentpadding">            
+                <div class="list" style="background-color: whitesmoke;">
+                    <label class="item item-input item-floating-label">
+                        <span class="input-label" >First Name</span>
+                        <input type="text" placeholder="First Name" ng-model="signupService.typedFirstName">
+                    </label>
+
+                    <label class="item item-input item-floating-label" >
+                        <span class="input-label">Password</span>
+                        <input type="text" placeholder="password" ng-model="signupService.typedPassword">
+                    </label>
+                    <label class="item item-input item-floating-label" >
+                        <span class="input-label">Confirm Password</span>
+                        <input type="text" placeholder="Confirm password" ng-model="signupService.typedConfirmPassword">
+                    </label>
+                </div>
+            </div>
+        </ion-content>
+    <ion-footer-bar ng-controller="logoutController" align-title="center" class=" bar-assertive " ng-click="onClickSubmit();onClickLogout();">
+            <center><div class="title">Submit</div></center>
+        </ion-footer-bar>
+</ion-view>

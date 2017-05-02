@@ -1,0 +1,507 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 Oct, 2014, 4:46:16 PM
+    Author     : mshukla1
+*/
+
+.modal-open {
+    pointer-events: all !important;
+}
+
+.item h2 {
+    font-size: 25px !important;
+}
+
+.button.button-positive {
+    border-color: #db4040 !important;
+    background-color: #db4040 !important;
+}
+
+.action-sheet .button {
+    color: #db4040;
+}
+
+.action-sheet-title {
+    font-size: 18px;
+    color: #772121;
+}
+
+.action-sheet .button:hover {
+    color: #772121;
+}
+
+.app-font-size {
+    font-size: 12px;
+}
+
+.chartContainer {
+    height: 300px !important;
+}
+
+.tabs-striped.tabs-positive .tab-item.tab-item-active, .tabs-striped.tabs-positive .tab-item.active, .tabs-striped.tabs-positive .tab-item.activated {
+    color: #fff !important;
+    border-color: #fff;
+}
+
+.tabs-striped.tabs-positive .tab-item {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.tabs-positive > .tabs, .tabs.tabs-positive {
+    border-color: #941D1D !important;
+    background-color: #db4040 !important;
+    background-image: linear-gradient(0deg, #db4040, #db4040 50%, transparent 50%) !important;
+    color: #fff !important;
+}
+
+.transparent {
+    background: transparent !important;
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.margin-0 {
+    margin: 0px !important;
+}
+
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+
+.customer-item {
+    border: none;
+    padding: 16px !important;
+}
+
+.arrowDiv:active {
+    background: #db4040 !important;
+    color: #fff !important;
+}
+
+.arrowDiv:active .app-icon {
+    color: #fff !important;
+}
+
+.arrowDiv:active div, .arrowDiv:active h4 {
+    color: #fff !important;
+}
+
+.padding-left-3px {
+    padding-left: 3px !important;
+}
+
+.padding-left-0px {
+    padding-left: 0px !important;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.menuContent {
+    margin-top: 40px;
+}
+
+ion-nav-view {
+    background: #fff;
+}
+
+.app-color {
+    /*box-shadow: 0px 0px 5px #db4040 !important;*/
+    background-color: #db4040 !important;
+    color: #fff !important;
+}
+
+.app-border {
+    border-color: #db4040 !important;
+}
+
+.checkbox-assertive input:before, .checkbox-assertive .checkbox-icon:before {
+    border-color: #db4040 !important;
+}
+
+.checkbox-assertive input:checked:before, .checkbox-assertive input:checked + .checkbox-icon:before {
+    background: #db4040 !important;
+}
+
+.input-label {
+    color: #db4040;
+}
+
+.has-header {
+    padding-top: 40px;
+}
+
+.item-checkbox {
+    color: #db4040;
+}
+
+.button.button-assertive {
+    background-color: #db4040;
+}
+
+.button {
+    min-width: 150px;
+}
+
+.pull-center {
+    text-align: center;
+    float: none;
+}
+
+.infoModal {
+    height: 260px !important;
+    background: transparent !important;
+    color: white !important;
+    opacity: 1 !important;
+    box-shadow: 0px 0px 4px #fff !important;
+}
+
+.pull-right {
+    float: right;
+}
+
+.lblIdentifierValue {
+    font-weight: bolder;
+}
+
+.item .item-input {
+    border: none !important;
+}
+
+.item .item-input {
+    border: none !important;
+}
+
+.item .item-input > input:focus {
+    box-shadow: 0px 0px 5px #db4040;
+}
+
+.font-size-30 {
+    font-size: 30px !important;
+}
+
+.app-icon {
+    color: #db4040;
+}
+
+.form-icon {
+    color: #000000;
+}
+
+.CustomModal {
+    min-height: 0px;
+    width: 90%;
+    /*width: 70%;*/
+    /*height: 100px;*/
+    height: 100px;
+    left: 10%;
+    top: 30%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1.0;
+    margin: auto;
+    border-radius:10px 10px 10px 10px;
+    background-color: #F5F5F0;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+#loader1 {
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.loader {
+    text-align: center;
+}
+
+.loader span {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 0px;
+}
+
+.border-radius {
+    border-radius: 500px;
+}
+
+.loader span:nth-child(1) {
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    transform-perspective: 100px;
+    -webkit-animation: cuve 1s 0.5s infinite;
+    animation: cuve 1s 0.5s infinite;
+}
+
+.loader span:nth-child(2) {
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    transform-perspective: 100px;
+    -webkit-animation: cuve 1s 1s infinite;
+    animation: cuve 1s 1s infinite;
+}
+
+.loader span:nth-child(3) {
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    transform-perspective: 100px;
+    -webkit-animation: cuve 1s 1.5s infinite;
+    animation: cuve 1s 1.5s infinite;
+}
+
+.loader span:nth-child(4) {
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    transform-perspective: 100px;
+    -webkit-animation: cuve 1s 2s infinite;
+    animation: cuve 1s 2s infinite;
+}
+
+.loader span:nth-child(5) {
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    transform-perspective: 100px;
+    -webkit-animation: cuve 1s 2.5s infinite;
+    animation: cuve 1s 2.5s infinite;
+}
+
+.loaderMessage, .loaderText {
+    font-size: 20px;
+    color: #db4040;
+    font-family: initial;
+}
+
+.loaderText {
+    margin-top: 60px !important;
+}
+
+@-webkit-keyframes cuve {
+    0% {
+    -webkit-transform: rotateY(-90deg) perspective(50px);
+    transform: rotateY(-90deg) perspective(50px);
+    background: #871414;
+}
+50% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background: #6d0d0d;
+}
+100% {
+    -webkit-transform: rotateY(90deg) perspective(50px);
+    transform: rotateY(90deg) perspective(50px);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    background: #871414;
+}
+}
+
+/*.......................FOR DATEPICKER....................................................*/
+
+.popup-body .datetimepicker {
+    min-height: 221px;
+}
+
+.popup-body .datetimepicker table {
+    width: 100%;
+}
+
+/*
+ * Use ionic icons instead of bootstrap's glyphicons 
+ * for arrows in the datetimepicker.
+ */
+.glyphicon {
+    vertical-align: top;
+    display: inline-block;
+    font-family: "Ionicons";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon:before {
+    vertical-align: top;
+    font-size: 32px;
+    line-height: 32px;
+    padding-right: 2px;
+    padding-left: 2px;
+    display: inline-block;
+    padding: 0 0 1px 0;
+}
+
+.glyphicon-arrow-right:before {
+    content: "\f10a";
+}
+
+.glyphicon-arrow-left:before {
+    content: "\f107";
+}
+
+/*.................................................................................*/
+
+input:focus {
+    box-shadow: 0px 0px 10px coral;
+}
+
+/** CUSTOM CSS */
+.bg-wall-color {
+    background-color: #F5F5F0;
+}
+
+.list .item.item-accordion {
+    line-height: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.09s all linear;
+}
+
+.list .item.item-accordion.ng-hide {
+    line-height: 0px;
+}
+
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+    display: block !important;
+}
+
+.font-family-segoe-ui {
+    font-family: "Segoe UI";
+}
+
+.font-family-arial {
+    font-family: "Arial";
+}
+
+.font-color-dark-grey {
+    color: #434343;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-80-percent {
+    font-size: 80%;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    padding: 7px 4px;
+    cursor: pointer;
+}
+
+/***********************************************************/
+/** {*/
+/*margin: 0; padding: 0;*/
+/*}*/
+/*html, body, #container {*/
+/*height: 100%;*/
+/*}*/
+/*header {*/
+/*height: 50px;*/
+/*background: gray;*/
+/*}*/
+main {
+    height: 100%;
+    background: green;
+}
+
+.half {
+    height: 33.333%;
+}
+
+.half:first-child {
+    background: blue;
+}
+
+.half:last-child {
+    background: yellow;
+}
+
+/****************************************************************************************/
+/*  POPUPS CLASSES:
+        .popup
+        .popup-head
+        .popup-title
+        .popup-sub-title
+        .popup-body
+        .popup-buttons.row
+        .popup-buttons .button  */
+/****************************************************************************************/
+
+.popup-head {
+    height: 45px !important;
+    background: #db4040 !important;
+}
+
+.popup-title {
+    color: #ffffff !important;
+    font-family: "Segoe UI" !important;
+    /*font-weight: bold !important;*/
+    font-size: 18px !important;
+}
+
+.popup-body {
+    /*background: #f5f5f0 !important;*/
+    background: #f8f8f8 !important;
+    color: #434343 !important;
+    font-size: 16px !important;
+    font-family: "Segoe UI" !important;
+    font-weight: bold;
+}
+
+.popup .button {
+    border-color: #666666 !important;
+    background-color: #666666 !important;
+    color: #fff !important;
+    font-family: "Segoe UI" !important;
+    font-size: 18px !important;
+}
+
+.popup-buttons {
+    /*height: 35px !important;*/
+    /*border-color: #666666 !important;*/
+    /*background-color: #666666 !important;*/
+}
+
+.popup {
+    width: 320px !important;
+}
+
+/****************************************************************************************/
+.empty-textbox {
+    border: 2px solid #db4040 !important;
+    border-color: #db4040 !important;
+}
+
+/** NOT IN USE */
+.filled-textbox {
+    border: 0px solid #918f8f !important;
+    border-color: #918f8f !important;
+}

@@ -1,0 +1,27 @@
+
+
+<ion-view class="wrapper" ng-controller="attendanceController">
+    <div class="bar bar-header">
+        <div class="bar bar-header bar-assertive"style=" position: absolute">
+            <h1 class="title">List</h1>
+        </div>   
+    </div>                
+
+    <ion-content class="padding"style="margin-top:50px">
+        <div  style="background-color: whitesmoke;" ng-controller="attendanceController">
+            <ul class="list">        
+                <li ng-repeat="x in attendanceService.names" ng-if="x.Attendance < attendanceService.criteria">
+                    <div style="margin-top: 36px;margin-left: 10px;font-size: 15px;font-family: serif">
+                        <b>Enrollment no:</b>{{x.E_no}}&nbsp;&nbsp;
+                        <b>Name:</b>{{x.Name}}
+                    </div><br><hr>
+                </li>
+            </ul>
+        </div>
+
+
+    </ion-content>
+    <ion-footer-bar align-title="center" class=" bar-assertive " ng-click="">
+        <center><div class="title"><button id="regbtn">generate report</button></div></center>
+    </ion-footer-bar>
+</ion-view>

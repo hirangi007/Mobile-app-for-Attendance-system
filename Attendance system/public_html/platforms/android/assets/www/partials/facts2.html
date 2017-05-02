@@ -1,0 +1,34 @@
+<ion-view view-title="Also Factual">
+    <div class="bar bar-header bar-assertive">
+        <h3 class="title">INFORMATION</h3>
+    </div>
+    <ion-content class="padding">   
+        <div style="margin-top: 60px;">
+            <ul>
+                <li style="font-size: 20px"><b>This is a mini project application using</b></li>
+                <br/>
+                <ul>
+                    <li style="list-style: disc;" style="font-size: 15px">Ionic Framework</li><br/>
+                    <li style="list-style: disc;" style="font-size: 15px">Cordova</li><br/>
+                    <li style="list-style: disc;" style="font-size: 15px">Angular Js</li><br/>
+                    <li style="list-style: disc;" style="font-size: 15px">HTML 5</li><br/>
+                </ul>
+            </ul>
+            <p ng-controller="backButtonController">
+                <a class="button icon ion-home" href="#/tab/selectInstitute" ng-click="onClickBackButton()">Institutes</a>
+                <br/><br/>
+                <a ng-click="onIconClickFacebook()">
+                    <img style="width: 65px;height: 65px" src="img/btech.jpg"/>
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a ng-click="onIconClickGoogle()">
+                    <img style="width: 65px;height: 65px" src="img/mtech.jpg"/>
+                </a>
+                &nbsp;&nbsp;&nbsp;
+                <a ng-click="onIconClickLinkedin()">
+                    <img style="width: 65px;height: 65px" src="img/logo.png"/>
+                </a>
+            </p>
+        </div>
+    </ion-content>
+</ion-view>

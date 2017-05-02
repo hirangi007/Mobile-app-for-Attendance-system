@@ -1,0 +1,103 @@
+<ion-view  ng-controller="instituteController">
+    <ion-side-menus>
+        <ion-side-menu-content style="background-color: whitesmoke">
+            <div class="bar bar-header bar-assertive" ng-controller="sideMenuController">
+                <h1 class="title">Select Institute</h1>
+                <button class="button button-icon icon ion-navicon-round" ng-click="opensidemenu()"></button>
+            </div>   
+
+            <ion-content has-header="true" padding="true">
+                <ion-list >
+
+                    <div class="list card" style=" margin-top:50px;">
+                        <ion-item class="item item-avatar item-thumbnail-left item-text-wrap"
+                                  menu-close ng-click="onClickCgpitInstitute();">  
+                            <img style="background-image:url('img/colleges/cgpit.gif');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:120%; height:120%;">                
+                            <p>Chhotubhai Gopalbhai Patel Institute Of Technology</p>
+                        </ion-item>  
+                    </div>       
+
+                   
+                    
+                    <div class="card">
+                        <ion-item class="item item-thumbnail-left item-text-wrap"
+                                  menu-close ng-click="onClickMalibaInstitute();" >  
+                            <img style="background-image:url('img/colleges/MPC_logo.jpg');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:150%; height:150%;">                
+                            <p>Maliba Pharmacy College</p>
+                        </ion-item>
+
+                    </div>
+                    <div class="card">
+                        <ion-item class="item item-thumbnail-left item-text-wrap"
+                                  menu-close  ng-click="onClickShrimkaInstitute();" >  
+                            <img style="background-image:url('img/colleges/srimca.gif');
+                                 border-radius:100%; background-position:right;
+                                 background-size:cover; width:120%; height:120%;">                
+                            <p>Shrimad Rajchandra Institute of Management & Computer Application </p>
+                        </ion-item>
+
+
+                    </div>
+                    
+                    
+                     <div class="card" >
+                        <ion-item class="item item-thumbnail-left item-text-wrap"
+                                  menu-close  ng-click="onClickCgbhaktaInstitute();" >  
+                            <img style="background-image:url('img/colleges/cgbkta.jpg');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:120%; height:120%;">                
+                            <p>C.G.Bhakta Institute Of Biotechnology</p>
+                        </ion-item>
+                    </div>
+                    
+                    <div class="card">
+                        <ion-item class="item item-thumbnail-left item-text-wrap"
+                                  menu-close ng-click="onClickBvpatelInstitute();" >  
+                            <img style="background-image:url('img/colleges/bba.gif');
+                                 border-radius:100%; background-position:left;
+                                 background-size:cover; width:120%; height:120%;">                
+                            <p>B.V Patel Institute of Business Management,Computer & Information Technology</p>
+                        </ion-item>
+
+                    </div>
+<!--                    <div class="card">
+                        <ion-item class="item item-thumbnail-left item-text-wrap"
+                                  menu-close ui-sref="app.user.profile({objId: userId})" ng-click="onClickNursingInstitute();">  
+                            <img style="background-image:url('img/colleges/nursing.jpg');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:120%; height:120%;">                
+                            <p>Maniba Bhula Nursing College</p>
+                        </ion-item>
+                    </div>-->
+<!--                    <ion-infinite-scroll></ion-infinite-scroll>-->
+                </ion-list>
+            </ion-content>
+        </ion-side-menu-content> 
+        <ion-side-menu side="right">
+            <ion-header-bar class="bar-dark">
+                <h1 class="title">Profile</h1>
+            </ion-header-bar>
+            <ion-content style="background-color: #cccccc">
+                <ul class="list" style="margin-top: -40px">
+                    <li>
+                        <a style="background-color: #cccccc" href="#login" class="item" ng-controller="logoutController" ng-click="onClickLogout();">
+                            <i class="icon ion-heart"></i>
+                            &nbsp;&nbsp;logout
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" style="background-color: #cccccc">
+                            <i class="icon ion-person-stalker"></i>
+                            &nbsp;&nbsp;change password
+                        </a>
+                    </li>
+                </ul>
+            </ion-content>
+            <ion-nav-view></ion-nav-view>
+        </ion-side-menu>
+    </ion-side-menus>
+</ion-view>

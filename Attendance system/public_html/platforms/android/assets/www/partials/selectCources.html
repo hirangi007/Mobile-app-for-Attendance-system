@@ -1,0 +1,169 @@
+<ion-view  class="wrapper" ng-controller="courseController">
+    <ion-side-menus>
+        <ion-side-menu-content style="background-color: whitesmoke">
+            <a ng-controller="scrollController" ng-click="scrollTop()">
+                <div class="bar bar-header bar-assertive"style=" position: absolute" ng-controller="backButtonController">
+                    <button class="button button-icon icon ion-arrow-left-a" ng-click="onClickCourseBackButton()"></button>
+                    <h1 class="title">select branch</h1>
+                    <button class="button button-icon icon ion-navicon-round" ng-controller="sideMenuController" ng-click="opensidemenu()"></button>
+                </div>    
+            </a> 
+
+            <ion-content has-header="true" padding="true">
+                <ion-list class="margin-top-10 list">
+
+                    <div class=" list card" style="margin-top: 50px" >
+                        <ion-item class="item item-thumbnail-left "
+                                  menu-close  ng-click="onClickItCourse();">  
+                            <img style="background-image:url('img/branch/itl_1.jpg');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:120%; height:120%;">                
+                            <p><h2>Information Technology</h2></p>
+                        </ion-item>
+                        <div class="item item-body">
+                            <img class="full-image" src="img/branch/it.jpg">
+                            <p>
+                                IT is an engineering division, which concentrates on
+                                the study of  utilizing computers and telecommunications
+                                in order to control, gather, store and circulate information.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card" >
+                        <ion-item class="item item-thumbnail-left"
+                                  menu-close  ng-click="onClickCoCourse();" >  
+                            <img style="background-image:url('img/branch/col.jpg');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:120%; height:120%;">                
+                            <p><h2>Computer</h2></p>
+                        </ion-item>
+                        <div class="item item-body" >
+                            <img class="full-image" src="img/branch/co.jpg">
+                            <p>
+                                Computer engineering is a discipline that integrates
+                                several fields of
+                                electrical engineering and computer science 
+                                required to develop computer 
+                                hardware and software.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <ion-item class="item item-thumbnail-left"
+                                  menu-close ng-click="onClickMechCourse();">  
+                            <img style="background-image:url('img/branch/ml.jpg');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:150%; height:150%;">                
+                            <p><h2>Mechanical</h2></p>
+                        </ion-item>
+                        <div class="item item-body" >
+                            <img class="full-image" src="img/branch/mech.jpg">
+                            <p>
+                                mechanical is dealing with the design, 
+                                construction, and use of machines.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <ion-item class="item item-thumbnail-left"
+                                  menu-close  ng-click="onClickCivilCourse();">  
+                            <img style="background-image:url('img/branch/cl_1.PNG');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:120%; height:120%;">                
+                            <p><h2>Civil</h2></p>
+                        </ion-item>
+                        <div class="item item-body" >
+                            <img class="full-image" src="img/branch/civ.jpg">
+                            <p>
+                                Civil is a professional engineering
+                                discipline that deals with the design, construction, 
+                                and maintenance of the physical and naturally built 
+                                environment.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <ion-item class="item item-thumbnail-left"
+                                  menu-close  ng-click="onClickAutoCourse();">  
+                            <img style="background-image:url('img/branch/aul.jpg');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:120%; height:120%;">                
+                            <p><h2><b>Automobie</b></h2></p>
+                        </ion-item>
+                        <div class="item item-body" >
+                            <img class="full-image" src="img/branch/auto.jpg">
+                            <p>
+                                Automobile
+                                deals with designing, manufacturing and operating
+                                automobiles. It is a segment of vehicle engineering 
+                                which deals with motorcycles, buses, trucks, etc. 
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <ion-item class="item item-thumbnail-left"
+                                  menu-close  ng-click="onClickElecCourse();">  
+                            <img style="background-image:url('img/branch/eel.jpg');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:120%; height:120%;"/>                
+                            <p><h2>Electrical</h2></p>
+                        </ion-item>
+                        <div class="item item-body" >
+                            <img class="full-image" src="img/branch/ele.jpg">
+                            <p>
+                                Electrical engineering is a field of engineering that generally deals with the study and application of electricity, electronics, and electromagnetism.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <ion-item class="item item-thumbnail-left"
+                                  menu-close  ng-click="onClickEcCourse();">  
+                            <img style="background-image:url('img/branch/ecl.jpg');
+                                 border-radius:100%; background-position:center center;
+                                 background-size:cover; width:120%; height:120%;">                
+                            <p><h2>Electronics and communication </h2></p>
+                        </ion-item>
+                        <div class="item item-body" >
+                            <img class="full-image" src="img/branch/ec.jpg">
+                            <p>
+                                Electronics engineering, or electronic engineering,
+                                is an engineering discipline which utilizes non-linear
+                                and active electrical components to design electronic 
+                                circuits, devices and systems.
+                            </p>
+                        </div>
+                    </div>
+<!--                    <ion-infinite-scroll  distance="10%"></ion-infinite-scroll>-->
+                </ion-list>
+            </ion-content>
+        </ion-side-menu-content> 
+        <ion-side-menu side="right">
+            <ion-header-bar class="bar-dark">
+                <h1 class="title">Profile</h1>
+            </ion-header-bar>
+            <ion-content style="background-color: #cccccc">
+                <ul class="list" style="margin-top: -40px">
+                    <li>
+                        <a style="background-color: #cccccc" href="#login" class="item" ng-controller="logoutController" ng-click="onClickLogout();">
+                            <i class="icon ion-heart"></i>
+                            &nbsp;&nbsp;logout
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item" style="background-color: #cccccc">
+                            <i class="icon ion-person-stalker"></i>
+                            &nbsp;&nbsp;change password
+                        </a>
+                    </li>
+                </ul>
+            </ion-content>
+            <ion-nav-view></ion-nav-view>
+        </ion-side-menu>
+    </ion-side-menus>
+</ion-view>

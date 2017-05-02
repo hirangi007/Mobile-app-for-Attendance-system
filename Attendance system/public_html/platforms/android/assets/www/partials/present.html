@@ -1,0 +1,68 @@
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js"></script>
+<script ng-controller="attendanceController">
+    //var msg = "Success";
+    $(document).ready(function () {
+        $("#regbtn").click(function () {
+            $.ajax({
+                url: "http://localhost/xampp/reg/temp.php",
+                type: "GET",
+                dataType: "json",
+                data: {my_json_data: attendanceService.names},
+                ContentType: "application/json",
+                alert("sbcd");
+//                success: function (response) {
+//                    alert("Registration Successful");
+//                    location.href = "index.html";
+//                },
+//                error: function (err) {
+//                    alert("User Already Registered");
+//                    location.href = "index.html";
+//                },
+            })
+        });
+
+    });
+</script>
+<ion-view class="wrapper" ng-controller="attendanceController">
+    <div class="bar bar-header">
+        <div class="bar bar-header bar-assertive"style=" position: absolute">
+            <h1 class="title">List</h1>
+        </div>   
+    </div>                
+
+    <ion-content class="padding"style="margin-top:50px">
+        <div  style="background-color: whitesmoke;" ng-controller="attendanceController">
+            <ul class="list">        
+                <li ng-repeat="x in attendanceService.names" ng-if="x.Attendance < attendanceService.criteria">
+                    <div style="margin-top: 36px;margin-left: 10px;font-size: 15px;font-family: serif">
+
+
+
+                        <b>Enrollment no:</b>{{x.E_no}}&nbsp;&nbsp;
+                        <b>Name:</b>{{x.Name}}
+
+
+                
+
+                    </div><br><hr>
+                    <!--                            <h3 style="font-size: 18px">
+                                                    <b style="color: #cc2311">City :</b>{{x.City}}<br/>
+                                                    <b style="color: #cc2311">Country :</b>{{x.Country}}<br/>
+                                                    <b style="color: #cc2311">Gender :</b>{{x.Gender}}<br/>
+                                                    <b style="color: #cc2311">Payment chosen :</b>{{x.Paymentchosen}}<br/>
+                                                    <b style="color: #cc2311">Order-id :</b>{{x.orderid}}<br/>
+                                                </h3>-->
+                </li>
+            </ul>
+        </div>
+
+
+    </ion-content>
+    <ion-footer-bar align-title="center" class=" bar-assertive " ng-click="">
+        <center><div class="title"><button id="regbtn">generate report</button></div></center>
+    </ion-footer-bar>
+</ion-view>
